@@ -218,8 +218,8 @@ input:checked + .slider:before {
 }
 
 .view-products-button {
-  background-color: rgb(255, 255, 255);
-  color: #515151;
+  background-color:white;
+  color: #000000;
   font-size: medium;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 10px;
@@ -247,7 +247,7 @@ input:checked + .slider:before {
 
 .dark .view-products-button {
   background-color: #1f1f1f;
-   color: rgb(208, 207, 207);
+   color: rgb(255, 255, 255);
    border: none;
 }
 
@@ -321,7 +321,6 @@ input:checked + .slider:before {
     margin-top: 10px;
     width: 40%; 
     padding: 0.7rem; 
-    border-radius: 1rem;
 
     
   }
