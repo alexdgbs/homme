@@ -355,6 +355,10 @@ input:checked + .slider:before {
     display: block; 
   }
 }
+.dark .view-products-button:active {
+  background-color: #1f1f1f;
+  color: #fff; 
+}
 
 .view-products-button:active {
   transform: translateY(0);
