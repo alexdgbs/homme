@@ -14,6 +14,7 @@ const Navbar = () => {
           <li>
             <a href="/">Contacto</a>
           </li>
+          
         </ul>
       </div>
     </nav>
