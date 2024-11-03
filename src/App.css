@@ -258,6 +258,7 @@ input:checked + .slider:before {
 
 .view-products-button:active {
   transform: translateY(0);
+  background-color: #ffffff;
 }
 
 .product-image {
