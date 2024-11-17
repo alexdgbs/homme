@@ -50,7 +50,7 @@ function App() {
                     price="89.00 USD"
                     imageUrl="https://casapajaros.com.mx/cdn/shop/products/Lamparaescritoriovintage_1024x.jpg?v=1600816440"
                   />
-                    <Link to="/escritorio">
+                    <Link to="/escritorio"className="no-style-link">
                     <button className="view-products-button">
                    <strong>Explorar Productos</strong>
                    </button>

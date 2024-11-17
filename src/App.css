@@ -425,7 +425,9 @@ input:checked + .slider:before {
   text-decoration: none; 
   display: inline-block;
 }
-
+a:focus, button:focus {
+  outline: none; 
+}
 .no-style-link:visited, .no-style-link:active, .no-style-link:hover {
   color: inherit; 
 }
