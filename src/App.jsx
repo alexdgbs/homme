@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Topbar from './components/Topbar';
 import ProductCard from './components/ProductCard';
+import Escritorio from './pages/Escritorio'; 
 import './App.css';
 
 function App() {
@@ -19,7 +21,6 @@ function App() {
     });
   };
 
-  
   useEffect(() => {
     if (darkMode) {
       document.body.classList.add('dark');
@@ -31,28 +32,37 @@ function App() {
   }, [darkMode]);
 
   return (
-    <div id="root" className={darkMode ? "dark" : "light"}>
-      <Topbar toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
-      <Navbar />
-      <div className="app-container"> 
-        <h1 className="app-title">Homme</h1>
-        <p className="from-home">FROM HOME</p>
-        <p className="welcome">Bienvenido</p>
-        <section className="product-section">
-          <div className="product-grid">
-            <ProductCard
-              title="Lampara Vintage"
-              description="Material: Metal/Madera"
-              price="89.00 USD"
-              imageUrl="https://casapajaros.com.mx/cdn/shop/products/Lamparaescritoriovintage_1024x.jpg?v=1600816440"
-            />
-            <button className="view-products-button">
-              <strong>Explorar Productos</strong>
-            </button>
-          </div>
-        </section>
+    <Router> 
+      <div id="root" className={darkMode ? "dark" : "light"}>
+        <Topbar toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={
+            <div className="app-container"> 
+              <h1 className="app-title">Homme</h1>
+              <p className="from-home">FROM HOME</p>
+              <p className="welcome">Bienvenido</p>
+              <section className="product-section">
+                <div className="product-grid">
+                  <ProductCard
+                    title="Lampara Vintage"
+                    description="Material: Metal/Madera"
+                    price="89.00 USD"
+                    imageUrl="https://casapajaros.com.mx/cdn/shop/products/Lamparaescritoriovintage_1024x.jpg?v=1600816440"
+                  />
+                    <Link to="/escritorio">
+                    <button className="view-products-button">
+                   <strong>Explorar Productos</strong>
+                   </button>
+                 </Link>
+                </div>
+              </section>
+            </div>
+          } />
+          <Route path="/escritorio" element={<Escritorio />} />  
+        </Routes>
       </div>
-    </div>
+    </Router>
   );
 }
 

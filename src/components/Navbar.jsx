@@ -1,20 +1,23 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="container mx-auto">
         <ul>
-          <li>
-            <a href="/">Escritorio</a>
+        <li>
+            <Link to="/">Inicio</Link>  
           </li>
           <li>
-            <a href="/">Lámparas</a>
+            <Link to="/Escritorio">Escritorio</Link>  
           </li>
           <li>
-            <a href="/">Contacto</a>
+            <Link to="Lamparas">Lámparas</Link> 
           </li>
-          
+          <li>
+            <Link to="Contacto">Contacto</Link>  
+          </li>
         </ul>
       </div>
     </nav>
