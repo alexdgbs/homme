@@ -5,6 +5,13 @@ html, body, #root {
   text-align: center;
   overflow-x: hidden;
 }
+.dark .navbar,
+.dark .product-card,
+.dark .view-products-button {
+  background-color: #1f1f1f;
+  color: #fff;
+  border-color: #1c1c1c;
+}
 
 #root {
   width: 100%;
