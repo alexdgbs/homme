@@ -320,17 +320,13 @@ input:checked + .slider:before {
     padding: 16px;
   }
 
-  .from-home {
-    font-size: small;
-    animation: blink 1s infinite;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
 }
 
 .from-home {
-  font-size: x-small;
+  font-size: small;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   animation: blink 3s infinite;
+  font-variant: small-caps;
 }
 
 @keyframes blink {
@@ -368,7 +364,8 @@ input:checked + .slider:before {
 
 .escritorio-container {
   text-align: center;
-  margin: 20px;
+
+ 
   
 }
 
@@ -376,14 +373,14 @@ input:checked + .slider:before {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; 
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .escritorio-card {
   border-radius: 1rem;
   overflow: hidden;
   transition: transform 0.2s;
-  margin: 20px; 
+  margin: 10px; 
   max-width: 180px;
   flex: 1 1 calc(33.33% - 20px); 
   box-sizing: border-box; 
@@ -399,20 +396,6 @@ input:checked + .slider:before {
   image-rendering: crisp-edges;
   max-width: 180px;
 }
-.escritorio-card p{
-  padding: 2px;
-  font-size: small;
-  margin: 10px 0; 
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-}
-
-.escritorio-card h3{
-  padding: 2px;
-  font-size: medium;
-  margin: 10px 0; 
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 
 @media (max-width: 768px) {
   .escritorio-card {
@@ -425,7 +408,6 @@ input:checked + .slider:before {
     flex: 1 1 100%; 
   }
 }
-
 
 .no-style-link {
   color: inherit; 

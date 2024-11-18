@@ -41,7 +41,7 @@ function App() {
             <div className="app-container"> 
               <h1 className="app-title">Homme</h1>
               <p className="from-home">FROM HOME</p>
-              <p className="welcome">Bienvenido</p>
+              <p className="from-home">Bienvenue</p>
               <section className="product-section">
                 <div className="product-grid">
                   <ProductCard
