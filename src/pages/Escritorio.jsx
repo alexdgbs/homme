@@ -19,7 +19,7 @@ function Escritorio() {
           />
           <h3 className="product-title">Maderkit</h3>
           <p className="product-description">Galés</p>
-          <p className="product-price">149.00 USD</p>
+          <p className="product-price">3,199.00 MXN</p>
         </div>
         <div className="escritorio-card">
           <img
@@ -28,7 +28,7 @@ function Escritorio() {
           />
           <h3 className="product-title">Borja</h3>
           <p className="product-description">Paulonia</p>
-          <p className="product-price">199.00 USD</p>
+          <p className="product-price">4,000.00 MXN</p>
         </div>
         <div className="escritorio-card">
           <img
@@ -37,7 +37,7 @@ function Escritorio() {
           />
           <h3 className="product-title">Mubson</h3>
           <p className="product-description">Pino</p>
-          <p className="product-price">115.00 USD</p>
+          <p className="product-price">1,999.00 MXN</p>
         </div>
         <div className="escritorio-card">
           <img
@@ -46,7 +46,7 @@ function Escritorio() {
           />
           <h3 className="product-title">Echigoya</h3>
           <p className="product-description">Nordico</p>
-          <p className="product-price">87.00 USD</p>
+          <p className="product-price">1,249.00 MXN</p>
         </div>
       </div>
     </div>

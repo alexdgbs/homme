@@ -226,6 +226,7 @@ input:checked + .slider:before {
   z-index: 10; 
   text-align: center;
   bottom: initial; 
+  font-variant: small-caps;
 }
 
 .app-container {
