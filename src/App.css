@@ -221,9 +221,8 @@ input:checked + .slider:before {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 10px;
   border: none;
-  border-radius: 1rem;
   cursor: pointer;
-  animation: fadeIn 0.5s forwards, bounce 1s infinite;
+  animation: fadeIn 0.5s forwards, bounce 1.5s infinite;
   z-index: 10; 
   text-align: center;
   bottom: initial; 
@@ -325,13 +324,6 @@ input:checked + .slider:before {
     height: auto;
   }
 
-  .view-products-button {
-    margin-top: 10px;
-    padding: 0.7rem;
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
 
   .topbar h1 {
     font-size: x-large;
