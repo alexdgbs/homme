@@ -8,8 +8,7 @@ function Escritorio() {
       <Link to="/" className="no-style-link">
         <h1 className="app-title">Escritorios</h1>
       </Link>
-      <p className="from-home">FROM HOME</p>
-      <p className="from-home">Design</p>
+      <p className="from-home">O1E</p>
 
       <div className="escritorios">
         <div className="escritorio-card">
@@ -18,7 +17,6 @@ function Escritorio() {
             alt="Escritorio 1"
           />
           <h3 className="product-title">Maderkit</h3>
-          <p className="product-description">Galés</p>
           <p className="product-price">3,199.00 MXN</p>
         </div>
         <div className="escritorio-card">
@@ -27,7 +25,6 @@ function Escritorio() {
             alt="Escritorio 2"
           />
           <h3 className="product-title">Borja</h3>
-          <p className="product-description">Paulonia</p>
           <p className="product-price">4,000.00 MXN</p>
         </div>
         <div className="escritorio-card">
@@ -36,7 +33,6 @@ function Escritorio() {
             alt="Escritorio 3"
           />
           <h3 className="product-title">Mubson</h3>
-          <p className="product-description">Pino</p>
           <p className="product-price">1,999.00 MXN</p>
         </div>
         <div className="escritorio-card">
@@ -45,10 +41,14 @@ function Escritorio() {
             alt="Escritorio 4"
           />
           <h3 className="product-title">Echigoya</h3>
-          <p className="product-description">Nordico</p>
           <p className="product-price">1,249.00 MXN</p>
         </div>
       </div>
+      <Link to="/lamparas"className="no-style-link">
+      <button className="view-products-button">
+      <strong>Lámparas</strong>
+      </button>
+     </Link>
     </div>
   );
 }

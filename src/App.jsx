@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Topbar from './components/Topbar';
 import ProductCard from './components/ProductCard';
 import Escritorio from './pages/Escritorio'; 
+import Lamparas from './pages/Lamparas';
 import './App.css';
 
 function App() {
@@ -40,8 +41,8 @@ function App() {
           <Route path="/" element={
             <div className="app-container"> 
               <h1 className="app-title">Homme</h1>
-              <p className="from-home">FROM HOME</p>
-              <p className="from-home">Bienvenue</p>
+              <p className="from-home">From Home</p>
+              <p className="from-home2">Bienvenue</p>
               <section className="product-section">
                 <div className="product-grid">
                   <ProductCard
@@ -60,6 +61,7 @@ function App() {
             </div>
           } />
           <Route path="/escritorio" element={<Escritorio />} />  
+          <Route path="/lamparas" element={<Lamparas />} /> 
         </Routes>
       </div>
     </Router>
