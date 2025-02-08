@@ -216,12 +216,37 @@ input:checked + .slider:before {
   padding: 10px;
   border: none;
   cursor: pointer;
-  animation: fadeIn 0.5s forwards, bounce 2s infinite;
   z-index: 10; 
   text-align: center;
   bottom: initial; 
+  overflow: hidden;
 }
 
+.view-products-button::after {
+  content: '';
+  position: absolute;
+  left: -100%;
+  bottom: 0;
+  width: 50%; 
+  height: 2px;
+  background-color: #000000;
+  animation: loading 2s linear infinite;
+}
+.dark .view-products-button::after {
+  background-color: #ffffff; 
+}
+
+@keyframes loading {
+  0% {
+    left: -100%; 
+  }
+  50% {
+    left: 100%; 
+  }
+  100% {
+    left: -100%;
+  }
+}
 .view-contact-button {
   position: relative; 
   margin: 20px auto; 
@@ -362,7 +387,7 @@ input:checked + .slider:before {
   }
 }
 
-/* Consolidación de media queries para .view-products-button */
+
 @media (min-width: 768px) {
   .view-products-button {
     display: none;
@@ -390,7 +415,7 @@ input:checked + .slider:before {
   text-align: center;
 }
 
-/* Consolidación de media queries para .view-contact-button */
+
 @media (min-width: 768px) {
   .view-contact-button {
     display: none;
