@@ -6,6 +6,7 @@ import ProductCard from './components/ProductCard';
 import Escritorio from './pages/Escritorio'; 
 import Lamparas from './pages/Lamparas';
 import './App.css';
+import Contacto from './pages/Contacto';
 
 function App() {
 
@@ -57,11 +58,17 @@ function App() {
                    </button>
                  </Link>
                 </div>
+                <Link to="/contacto"className="no-style-link">
+                    <button className="view-contact-button">
+                   <strong>¡Contáctanos!</strong>
+                   </button>
+                 </Link>
               </section>
             </div>
           } />
           <Route path="/escritorio" element={<Escritorio />} />  
           <Route path="/lamparas" element={<Lamparas />} /> 
+          <Route path="/contacto" element={<Contacto />} />
         </Routes>
       </div>
     </Router>

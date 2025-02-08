@@ -67,10 +67,6 @@ html, body, #root {
   transition: color 0.3s;
 }
 
-.navbar a:hover {
-  color: #949494;
-}
-
 .container {
   width: 100%;
   max-width: 1280px;
@@ -155,7 +151,7 @@ html, body, #root {
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #5d7fb2;
 }
 
 input:checked + .slider:before {
@@ -186,7 +182,6 @@ input:checked + .slider:before {
   font-size: x-large;
 }
 
-
 .product-card {
   border-radius: 1rem;
   overflow: hidden;
@@ -211,7 +206,6 @@ input:checked + .slider:before {
   color: #fff;
 }
 
-
 .view-products-button {
   position: relative; 
   margin: 20px auto; 
@@ -228,12 +222,26 @@ input:checked + .slider:before {
   bottom: initial; 
 }
 
+.view-contact-button {
+  position: relative; 
+  margin: 20px auto; 
+  background-color: white;
+  color: #000000;
+  font-size: medium;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  z-index: 10; 
+  text-align: center;
+  bottom: initial; 
+}
+
 .app-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
- 
 }
 
 .product-grid {
@@ -243,22 +251,25 @@ input:checked + .slider:before {
   gap: 1rem;
 }
 
-
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
   }
-
   40% {
     transform: translateY(-5px);
   }
-
   60% {
     transform: translateY(-2px);
   }
 }
 
 .dark .view-products-button {
+  background-color: #1f1f1f;
+  color: rgb(255, 255, 255);
+  border: none;
+}
+
+.dark .view-contact-button {
   background-color: #1f1f1f;
   color: rgb(255, 255, 255);
   border: none;
@@ -320,7 +331,6 @@ input:checked + .slider:before {
     height: auto;
   }
 
-
   .topbar h1 {
     font-size: x-large;
   }
@@ -335,29 +345,29 @@ input:checked + .slider:before {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
   font-weight: 700;
 }
-.from-home2{
+
+.from-home2 {
   animation: blink 3s infinite;
   font-size: 11px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
   font-weight: 700;
-
 }
+
 @keyframes blink {
   0%, 100% {
     opacity: 1;
   }
-
   50% {
     opacity: 0;
   }
 }
 
+/* Consolidación de media queries para .view-products-button */
 @media (min-width: 768px) {
   .view-products-button {
     display: none;
   }
 }
-
 @media (max-width: 767px) {
   .view-products-button {
     display: block;
@@ -378,7 +388,18 @@ input:checked + .slider:before {
 
 .escritorio-container {
   text-align: center;
-  
+}
+
+/* Consolidación de media queries para .view-contact-button */
+@media (min-width: 768px) {
+  .view-contact-button {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .view-contact-button {
+    display: block;
+  }
 }
 
 .escritorios {
@@ -413,14 +434,17 @@ input:checked + .slider:before {
     flex: 1 1 calc(50% - 20px);
   }
 }
+
 .no-style-link {
   color: inherit; 
   text-decoration: none; 
   display: inline-block;
 }
+
 a:focus, button:focus {
   outline: none; 
 }
+
 .no-style-link:visited, .no-style-link:active, .no-style-link:hover {
   color: inherit; 
 }
