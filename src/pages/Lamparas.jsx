@@ -44,6 +44,11 @@ function Lamparas() {
           <p className="product-price">2,000.00 MXN</p>
         </div>
       </div>
+            <Link to="/"className="no-style-link">
+            <button className="view-products-button">
+            <strong>Inicio</strong>
+            </button>
+           </Link>
             <Link to="/escritorio"className="no-style-link">
             <button className="view-products-button">
             <strong>Escritorios</strong>

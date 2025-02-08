@@ -44,11 +44,17 @@ function Escritorio() {
           <p className="product-price">1,249.00 MXN</p>
         </div>
       </div>
+      <Link to="/"className="no-style-link">
+      <button className="view-products-button">
+      <strong>Inicio</strong>
+      </button>
+     </Link>
       <Link to="/lamparas"className="no-style-link">
       <button className="view-products-button">
       <strong>Lámparas</strong>
       </button>
      </Link>
+
     </div>
   );
 }
