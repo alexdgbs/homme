@@ -58,11 +58,6 @@ function App() {
                    </button>
                  </Link>
                 </div>
-                <Link to="/contacto"className="no-style-link">
-                    <button className="view-contact-button">
-                   <strong>¡Contáctanos!</strong>
-                   </button>
-                 </Link>
               </section>
             </div>
           } />

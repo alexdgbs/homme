@@ -230,7 +230,7 @@ input:checked + .slider:before {
   width: 50%; 
   height: 2px;
   background-color: #000000;
-  animation: loading 2s linear infinite;
+  animation: loading 4s linear infinite;
 }
 .dark .view-products-button::after {
   background-color: #ffffff; 

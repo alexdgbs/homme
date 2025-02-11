@@ -45,15 +45,25 @@ function Escritorio() {
         </div>
       </div>
       <Link to="/"className="no-style-link">
-      <button className="view-products-button">
+      <button className="view-contact-button">
       <strong>Inicio</strong>
       </button>
      </Link>
       <Link to="/lamparas"className="no-style-link">
-      <button className="view-products-button">
+      <button className="view-contact-button">
       <strong>Lámparas</strong>
       </button>
      </Link>
+     <Link to="/contacto"className="no-style-link">
+     <button className="view-contact-button">
+      <strong>Contacto</strong>
+      </button>
+      </Link>
+      <a href="https://github.com/alexdgbs" target="_blank" rel="noopener noreferrer" className="no-style-link">
+  <button className="view-contact-button">
+    <strong>GitHub</strong>
+  </button>
+  </a>
 
     </div>
   );

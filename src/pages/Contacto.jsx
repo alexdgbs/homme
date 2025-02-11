@@ -16,7 +16,7 @@ function Contact() {
       </div>
 
       <Link to="/" className="no-style-link">
-        <button className="view-products-button">
+        <button className="view-contact-button">
           <strong>Inicio</strong>
         </button>
       </Link>
