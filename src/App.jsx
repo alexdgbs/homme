@@ -44,14 +44,11 @@ function App() {
             path="/"
             element={
               <div className="app-container">
-                <p className="from-home">Vom Heim</p>
+                <p className="app-title">Vom Heim</p>
                 <p className="from-home2">Bienvenue</p>
                 <section className="product-section">
                   <div className="product-grid">
                     <ProductCard
-                      title="HL-Vintage"
-                      description="Selecta"
-                      price="499.00"
                       imageUrl="https://casapajaros.com.mx/cdn/shop/products/Lamparaescritoriovintage_1024x.jpg?v=1600816440"
                     />
                     <Link to="/escritorio" className="no-style-link">
