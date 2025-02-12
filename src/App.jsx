@@ -44,7 +44,7 @@ function App() {
             path="/"
             element={
               <div className="app-container">
-                <p className="from-home">From Home</p>
+                <p className="from-home">Vom Heim</p>
                 <p className="from-home2">Bienvenue</p>
                 <section className="product-section">
                   <div className="product-grid">
