@@ -35,7 +35,7 @@ function App() {
   return (
     <Router>
       <div id="root" className={darkMode ? "dark" : "light"}>
-        {/* Inserta el Topbar */}
+        {}
         <Topbar toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
         
         <Navbar />
@@ -49,9 +49,9 @@ function App() {
                 <section className="product-section">
                   <div className="product-grid">
                     <ProductCard
-                      title="Lampara Vintage"
+                      title="HL-Vintage"
                       description="Selecta"
-                      price="499.00 MXN"
+                      price="499.00"
                       imageUrl="https://casapajaros.com.mx/cdn/shop/products/Lamparaescritoriovintage_1024x.jpg?v=1600816440"
                     />
                     <Link to="/escritorio" className="no-style-link">

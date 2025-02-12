@@ -8,7 +8,7 @@ function Escritorio() {
       <Link to="/" className="no-style-link">
         <h1 className="app-title">Escritorios</h1>
       </Link>
-      <p className="from-home">O1E</p>
+      <p className="from-home2">O1E</p>
 
       <div className="escritorios">
         <div className="escritorio-card">
@@ -17,7 +17,9 @@ function Escritorio() {
             alt="Escritorio 1"
           />
           <h3 className="product-title">Maderkit</h3>
+          <p className="product-description">H-Edition</p>
           <p className="product-price">$3,199.00</p>
+          
         </div>
         <div className="escritorio-card">
           <img
@@ -25,6 +27,7 @@ function Escritorio() {
             alt="Escritorio 2"
           />
           <h3 className="product-title">Borja</h3>
+          <p className="product-description">Premium</p>
           <p className="product-price">$4,000.00</p>
         </div>
         <div className="escritorio-card">
@@ -33,6 +36,7 @@ function Escritorio() {
             alt="Escritorio 3"
           />
           <h3 className="product-title">Mubson</h3>
+          <p className="product-description">Deluxe</p>
           <p className="product-price">$1,999.00</p>
         </div>
         <div className="escritorio-card">
@@ -41,6 +45,7 @@ function Escritorio() {
             alt="Escritorio 4"
           />
           <h3 className="product-title">Echigoya</h3>
+          <p className="product-description">Artesanal</p>
           <p className="product-price">$1,249.00</p>
         </div>
       </div>

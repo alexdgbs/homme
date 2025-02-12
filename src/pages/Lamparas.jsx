@@ -8,7 +8,7 @@ function Lamparas() {
       <Link to="/" className="no-style-link">
         <h1 className="app-title">Lámparas</h1>
       </Link>
-      <p className="from-home">O1HL</p>
+      <p className="from-home2">O1HL</p>
 
       <div className="escritorios">
         <div className="escritorio-card">
@@ -17,6 +17,7 @@ function Lamparas() {
             alt="Lámpara 1"
           />
           <h3 className="product-title">Mate-one</h3>
+          <p className="product-description">Artesanal</p>
           <p className="product-price">750.00</p>
         </div>
         <div className="escritorio-card">
@@ -25,6 +26,7 @@ function Lamparas() {
             alt="Lámpara 2"
           />
           <h3 className="product-title">Vindkast</h3>
+          <p className="product-description">Selecta Plus</p>
           <p className="product-price">999.00</p>
         </div>
         <div className="escritorio-card">
@@ -33,6 +35,7 @@ function Lamparas() {
             alt="Lámpara 3"
           />
           <h3 className="product-title">Candelabro</h3>
+          <p className="product-description">Artesanal</p>
           <p className="product-price">1,299.00</p>
         </div>
         <div className="escritorio-card">
@@ -41,6 +44,7 @@ function Lamparas() {
             alt="Lámpara 4"
           />
           <h3 className="product-title">WL-3</h3>
+          <p className="product-description">Premium</p>
           <p className="product-price">2,000.00</p>
         </div>
       </div>

@@ -253,7 +253,9 @@ html, body, #root {
   z-index: 10;
   text-align: center;
   bottom: initial;
+  border-bottom: 2px solid  #1f1f1f;
 }
+
 
 .app-container {
   display: flex;
@@ -291,6 +293,7 @@ html, body, #root {
   background-color: #1f1f1f;
   color: rgb(255, 255, 255);
   border: none;
+  border-bottom: 2px solid #ffffff;
 }
 
 .product-image {
@@ -315,8 +318,8 @@ html, body, #root {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 12px;
   margin-top: 0.5rem;
-  color: #676464;
-  font-weight: 400;
+  color: #1a1a1a;
+  font-weight: 500;
 }
 .dark .product-price {
   color: whitesmoke;
@@ -347,9 +350,9 @@ html, body, #root {
 }
 
 .from-home {
-  font-size: large;
+  font-size: 2rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .from-home2 {
