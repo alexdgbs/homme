@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Navbar from './components/Navbar';
 import Topbar from './components/Topbar';
+import Navbar from './components/Navbar';
 import ProductCard from './components/ProductCard';
 import Escritorio from './pages/Escritorio'; 
 import Lamparas from './pages/Lamparas';
-import './App.css';
 import Contacto from './pages/Contacto';
+import './App.css';
 
 function App() {
-
   const [darkMode, setDarkMode] = useState(() => {
     const savedMode = localStorage.getItem('darkMode');
     return savedMode === 'true'; 
@@ -18,7 +17,7 @@ function App() {
   const toggleDarkMode = () => {
     setDarkMode(prevMode => {
       const newMode = !prevMode;
-      localStorage.setItem('darkMode', newMode); 
+      localStorage.setItem('darkMode', newMode);
       return newMode;
     });
   };
@@ -34,35 +33,39 @@ function App() {
   }, [darkMode]);
 
   return (
-    <Router> 
+    <Router>
       <div id="root" className={darkMode ? "dark" : "light"}>
+        {/* Inserta el Topbar */}
         <Topbar toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
+        
         <Navbar />
         <Routes>
-          <Route path="/" element={
-            <div className="app-container"> 
-              <h1 className="app-title">Homme</h1>
-              <p className="from-home">From Home</p>
-              <p className="from-home2">Bienvenue</p>
-              <section className="product-section">
-                <div className="product-grid">
-                  <ProductCard
-                    title="Lampara Vintage"
-                    description="Selecta"
-                    price="499.00 MXN"
-                    imageUrl="https://casapajaros.com.mx/cdn/shop/products/Lamparaescritoriovintage_1024x.jpg?v=1600816440"
-                  />
-                    <Link to="/escritorio"className="no-style-link">
-                    <button className="view-products-button">
-                   <strong>Explorar productos</strong>
-                   </button>
-                 </Link>
-                </div>
-              </section>
-            </div>
-          } />
-          <Route path="/escritorio" element={<Escritorio />} />  
-          <Route path="/lamparas" element={<Lamparas />} /> 
+          <Route
+            path="/"
+            element={
+              <div className="app-container">
+                <p className="from-home">From Home</p>
+                <p className="from-home2">Bienvenue</p>
+                <section className="product-section">
+                  <div className="product-grid">
+                    <ProductCard
+                      title="Lampara Vintage"
+                      description="Selecta"
+                      price="499.00 MXN"
+                      imageUrl="https://casapajaros.com.mx/cdn/shop/products/Lamparaescritoriovintage_1024x.jpg?v=1600816440"
+                    />
+                    <Link to="/escritorio" className="no-style-link">
+                      <button className="view-products-button">
+                        <strong>Explorar productos</strong>
+                      </button>
+                    </Link>
+                  </div>
+                </section>
+              </div>
+            }
+          />
+          <Route path="/escritorio" element={<Escritorio />} />
+          <Route path="/lamparas" element={<Lamparas />} />
           <Route path="/contacto" element={<Contacto />} />
         </Routes>
       </div>

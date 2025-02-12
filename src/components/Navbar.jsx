@@ -4,19 +4,20 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="container mx-auto">
-        <ul>
-        <li>
-            <Link to="/">Inicio</Link>  
+      <div className="navbar-container">
+        
+        <ul className="nav-links">
+          <li>
+            <Link to="/">Inicio</Link>
           </li>
           <li>
-            <Link to="/Escritorio">Escritorios</Link>  
+            <Link to="/Escritorio">Escritorios</Link>
           </li>
           <li>
-            <Link to="/Lamparas">Lámparas</Link> 
+            <Link to="/Lamparas">Lámparas</Link>
           </li>
           <li>
-            <Link to="/Contacto">Contacto</Link>  
+            <Link to="/Contacto">Contacto</Link>
           </li>
         </ul>
       </div>

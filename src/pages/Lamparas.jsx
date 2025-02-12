@@ -17,7 +17,7 @@ function Lamparas() {
             alt="Lámpara 1"
           />
           <h3 className="product-title">Mate-one</h3>
-          <p className="product-price">750.00 MXN</p>
+          <p className="product-price">750.00</p>
         </div>
         <div className="escritorio-card">
           <img
@@ -25,7 +25,7 @@ function Lamparas() {
             alt="Lámpara 2"
           />
           <h3 className="product-title">Vindkast</h3>
-          <p className="product-price">999.00 MXN</p>
+          <p className="product-price">999.00</p>
         </div>
         <div className="escritorio-card">
           <img
@@ -33,7 +33,7 @@ function Lamparas() {
             alt="Lámpara 3"
           />
           <h3 className="product-title">Candelabro</h3>
-          <p className="product-price">1,299.00 MXN</p>
+          <p className="product-price">1,299.00</p>
         </div>
         <div className="escritorio-card">
           <img
@@ -41,7 +41,7 @@ function Lamparas() {
             alt="Lámpara 4"
           />
           <h3 className="product-title">WL-3</h3>
-          <p className="product-price">2,000.00 MXN</p>
+          <p className="product-price">2,000.00</p>
         </div>
       </div>
       <Link to="/"className="no-style-link">
